@@ -16,6 +16,7 @@ export default function ProductCard({ product }) {
           <span className="chip">{product.category}</span>
           <h2 className="card__title">{product.title}</h2>
           <p className="card__price">${product.price.toFixed(2)}</p>
+          <span className="card__cta">View details</span>
         </div>
       </Link>
     </article>

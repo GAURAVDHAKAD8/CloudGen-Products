@@ -9,7 +9,7 @@ export default function App() {
       <header className="site-header">
         <div className="container site-header__inner">
           <Link to="/" className="brand">
-            Catalog
+            Catalog<span className="brand__dot">.</span>
           </Link>
         </div>
       </header>
@@ -21,6 +21,10 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
+
+      <footer className="site-footer">
+        Product Catalog · Built with React
+      </footer>
     </>
   );
 }
