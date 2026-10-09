@@ -40,5 +40,6 @@ export async function getProduct(id) {
     description: product.description,
     category: product.category,
     image: product.image,
+    rating: product.rating,
   };
 }

@@ -32,6 +32,7 @@ export default function ProductListPage() {
   const categories = Array.from(new Set(products.map((p) => p.category)));
 
 const q = query.trim().toLowerCase();
+
 const visible = products.filter(
   (p) =>
     (category === ALL_CATEGORIES || p.category === category) &&
